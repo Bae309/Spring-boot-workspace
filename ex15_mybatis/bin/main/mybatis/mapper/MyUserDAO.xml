@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.ex15_mybatis.jdbc.MyUserDAO"> <!-- 상대경로를 집어넣는다 --> <!-- 상대경로의 슬래시 대신에 점이 들어가야 함-->
+    
+    <select id="list" resultType="com.example.ex15_mybatis.jdbc.MyUserDTO">
+        select id, name from myuser
+    </select>
+
+
+</mapper>
